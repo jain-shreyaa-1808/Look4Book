@@ -1,0 +1,61 @@
+@import "main.css" ;
+
+
+.post h1{
+    text-align: center;
+    margin: 1em 0;
+}
+
+.element {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.element label{
+    padding:5px;
+    margin:5px;
+    
+}
+input,textarea{
+    border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size:15px;
+}
+
+.button1{
+    text-align: center; 
+}
+.button1 button{
+   background-color: rgb(5, 139, 5);
+   font-size: medium;
+   border-radius: 2px;
+   cursor: pointer;
+   
+}
+
+.popup{
+    width:500px;
+    border-radius: 5px;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    /* text-align:center; */
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+  }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Look4Book</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Space Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+    td a{
+        text-decoration: underline;
+        color:blue;
+    }
+</style>
+
+<body>
+  <div class="container">
+
+    <div class="header box">
+        <div class="header-dashboard">
+            <i class="fa fa-bars" style="font-size:24px"></i>
+            <h3>SEARCH</h3>
+            <input type="text">
+        </div>
+        <div class="header-buttons">
+            <!-- <button class="post-book-button" onclick="openPopup()">DONATE</button> -->
+            <button class="active"><a href="vendorListView.html">SHOPS</a></button>
+        </div>
+      <!-- <button class="post-book-button" onclick="openPopup()">+ POST A BOOK</button> -->
+      <!-- <button> <a href="/login/login_main.html">SIGN UP</a></button> -->
+    </div>
+    
+    <!-- <div id="map"></div> -->
+    
+    <div class="sidebar box">
+      <h1 class="logo"><a href="landingPage.html">Look4Book</a></h1>
+      <!--       <nav> -->
+      <div class="navigation">
+        <ul>
+          <div style="height:63vh">
+            <li class="active">FILTER</li>
+            <li>Location</li>
+            <li>Price</li>
+            <li>Settings</li>
+
+          </div>
+          <div class="username-bar">
+            <img class="username-profile" src="assets/profile.png" alt="profile" width="30px">
+            <span>Schrodinger's Cat</span>
+          </div>
+
+        </ul>
+      </div>
+      <!--       </nav> -->
+    </div>
+    
+    
+    
+    <div class="content box">
+        <div class="listbook innerbox"><h1>Shops</h1></div>
+       
+        <div class="books innerbox">
+          
+          <!-- <div class="table-wrapper"> -->
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th style="width: 10%">S No.</th>
+                    <th >Vendor name</th>
+                    <th >Phone Number</th>
+                    <th>Vendor Location</th>
+                    <!-- <th>Date Posted</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Units</th> -->
+                </tr>
+                </thead>
+                <tbody id="tbody1">
+                  <!-- <tr>
+                    <td></td>
+                    <td></td>
+                  </tr> -->
+                </tbody>
+                <!-- <tbody>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="200px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                    alt="book"
+                    width="200px">
+                  </td>
+                  <td>RD Sharma</td>
+                  <td>xyz</td>
+                  <td>21 October 2022</td>
+                  <td >It is in good condition</td>
+                  <td>Rs. 300</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="200px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="200px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="200px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tbody> -->
+            </table>
+        </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+
+    
+    
+    <div class="footer box">Footer</div>
+
+
+    
+
+  </div>
+  <script>
+    function initMap() {
+      var location = {lat: 37.7749, lng: -122.4194};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script> 
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA82okA2oJpgfUCSt8CJcJ40idx2WcJqVQ&callback=initMap%22%3E"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script>
+      var firebaseConfig = {
+      apiKey: "AIzaSyBOnWPfjkxzt36Z92fTXbDcK91hqCUw3Gc",
+      authDomain: "look4book-377605.firebaseapp.com",
+      databaseURL:"https://look4book-377605-default-rtdb.firebaseio.com/",
+      projectId: "look4book-377605",
+      storageBucket: "look4book-377605.appspot.com",
+      messagingSenderId: "116565248494",
+      appId: "1:116565248494:web:deeb6c8f3b1d94c41026ff"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth()
+    const database = firebase.database()
+    function SelectAllData(){
+      firebase.database().ref('vendors/').once('value',function(AllRecords)
+      {
+         AllRecords.forEach(
+          function(CurrentRecord)
+          {
+            var name=CurrentRecord.val().full_name;
+            var map_location=CurrentRecord.val().map_location;
+            var phone_number=CurrentRecord.val().phone_number;
+            AddItemsToTable(name,phone_number,map_location);
+          }
+         );
+      });
+    }
+    window.onload=SelectAllData;
+
+    var sno=0;
+    function AddItemsToTable(name,phone_number,map_location)
+    {
+      var tbody=document.getElementById('tbody1');
+      var trow=document.createElement('tr');
+      var td1=document.createElement('td');
+      // var linking=document.createElement('a');
+      var td2=document.createElement('td');
+      var td3=document.createElement('td');
+      var td4=document.createElement('td');
+      td1.innerHTML= ++sno;
+      td2.innerHTML= name;
+    //   td3.createElement('a')
+      // td3.innerHTML=map_location;
+      td3.innerHTML=phone_number;
+      td4.innerHTML="<a href='"+map_location+"'>"+map_location+"</a>" ;
+    //   td3.innerHTML='<a href="' + map_location + '"></a>';
+      trow.appendChild(td1);
+      trow.appendChild(td2);
+      trow.appendChild(td3);
+      trow.appendChild(td4);
+      tbody.appendChild(trow);
+
+    }
+
+</script>
+
+</html>

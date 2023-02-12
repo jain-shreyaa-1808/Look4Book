@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #eeeeee;
+  --secondary-color: #ffffff;
+  --text-color: #000000;
+}
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat";
+    
+}
+  
+.logo {
+  font-family:"space mono";
+}
+
+input{
+  /* width: 50em; */
+  padding: .1em .2em;
+  font-size: 1.2em;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  

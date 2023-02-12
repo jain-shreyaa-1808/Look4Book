@@ -1,0 +1,117 @@
+@import "main.css" ;
+
+
+.post h1{
+    text-align: center;
+    margin: 1em 0;
+}
+
+.element {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.element label{
+    padding:5px;
+    margin:5px;
+    /* display: inline-block; */
+    /* width: */
+}
+input,textarea{
+    border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size:15px;
+}
+/* .element input{
+    /* display: inline-block; 
+} */
+
+
+/* .element input{
+    width:75%;
+} */
+/* .button{ 
+   padding:15px;
+   border-bottom: 2px dashed rgb(182, 181, 181);
+} */
+
+.button1{
+    text-align: center; 
+}
+.button1 button{
+   background-color: rgb(5, 139, 5);
+   font-size: medium;
+   border-radius: 2px;
+   cursor: pointer;
+   
+}
+
+.popup{
+    width:500px;
+    border-radius: 5px;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    /* text-align:center; */
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    /* transition: transform 0.4s, top 0.4s; */
+  }
+
+  .open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  /* .popup img{
+    width:100px;
+    margin-top: -40%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  } */
+
+  /* .footer{
+    background-color: var(--text-color);
+
+  } */
+
+  /* .post
+      {
+          
+          border:2px solid red;
+          border-radius:20px;
+          max-width:500px;
+          padding:50px;
+      }
+      .element
+      {
+          padding:15px;
+
+          border-bottom: 2px dashed rgb(182, 181, 181);
+          width:100%;
+      }
+      .element label{
+          
+          padding:20px;
+      }
+      /* .element input{
+          width:75%;
+      } */
+      /* .button{
+         
+         padding:15px;
+         border-bottom: 2px dashed rgb(182, 181, 181);
+      } */
+      
+      
+      /* .button1{
+         text-align: center;
+         padding:15px;
+      } */

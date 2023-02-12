@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>LOGIN</title>
+  <style>
+    body {
+      font-family: "Montserrat";
+      background-color: black;
+      max-width: 400px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .login {
+      margin: 100px auto;
+      background-color: white;
+      font-size: medium;
+      text-align: center;
+      padding: 50px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      width: 150px;
+    }
+
+    .login button:hover {
+      background-color: rgb(135, 134, 134);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <p>LOGIN AS</p>
+    <!-- <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button> -->
+    <button type="submit" class="btn btn-primary btn-block mb-4" onclick="window.location.href='loginFormUser.html'">As A User</button>
+    <button type="submit"  class="btn btn-primary btn-block mb-4" onclick="window.location.href='loginFormVendor.html'">As A Vendor</button>
+  </div>
+</body>
+
+</html>

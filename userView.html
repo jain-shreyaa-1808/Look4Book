@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Look4Book</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Space Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="donate.css">
+  <script defer src="donate.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header box">
+        <div class="header-dashboard">
+            <i class="fa fa-bars" style="font-size:24px"></i>
+            <h3>SEARCH</h3>
+            <input type="text">
+        </div>
+        <div class="header-buttons">
+            <button><a href="vendorListView.html">SHOPS</a></button>
+            <button class="post-book-button" onclick="openPopup()">DONATE</button>
+        </div>
+      <!-- <button class="post-book-button" onclick="openPopup()">+ POST A BOOK</button> -->
+      <!-- <button> <a href="/login/login_main.html">SIGN UP</a></button> -->
+    </div>
+    
+    <!-- <div id="map"></div> -->
+    
+    <div class="sidebar box">
+      <h1 class="logo"><a href="landingPage.html">Look4Book</a></h1>
+      <!--       <nav> -->
+      <div class="navigation">
+        <ul>
+          <div style="height:63vh">
+            <li class="active">FILTER</li>
+            <li>Location</li>
+            <li>Price</li>
+            <li>Settings</li>
+
+          </div>
+          <div class="username-bar">
+            <img class="username-profile" src="assets/profile.png" alt="profile" width="30px">
+            <span>Schrodinger's Cat</span>
+          </div>
+
+        </ul>
+      </div>
+      <!--       </nav> -->
+    </div>
+    
+    
+    
+    <div class="content box">
+        <div id="map">
+            <!-- <img src="assets/map.png" alt=""
+            width="100%"> -->
+        </div>
+
+        <div class="listbook innerbox"><h1>Search Results</h1></div>
+       
+        <div class="books innerbox">
+          
+          <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Book name</th>
+                    <th>Vendor</th>
+                    <th>Date Posted</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Units</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="150px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                    alt="book"
+                    width="150px">
+                  </td>
+                  <td>RD Sharma</td>
+                  <td>xyz</td>
+                  <td>21 October 2022</td>
+                  <td >It is in good condition</td>
+                  <td>Rs. 300</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="150px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="150px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80" 
+                        alt="book"
+                        width="150px">
+                    </td>
+                    <td>RD Sharma</td>
+                    <td>xyz</td>
+                    <td>21 October 2022</td>
+                    <td >It is in good condition</td>
+                    <td>Rs. 300</td>
+                    <td>10</td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+
+    
+    
+    <div class="footer box">Footer</div>
+
+
+    <div class="popup" id="popup">
+      <!-- <img src="assets/404-tick.png" alt="" > -->
+      <div class="post">
+        <form action="">
+          
+            <h1>DONATE A BOOK</h1>
+            <div class="element">
+                <label for="">Name*</label>
+                <input type="text" placeholder="Enter book name" required>
+            </div>
+            <div class="element">
+                <label for="">Edition of the Book*</label>
+                <input type="text" placeholder="Enter Edition e.g 2017" required>
+            </div>
+            <div class="element">
+              <label>Condition*</label>
+              <input type="radio" id="good" name="condition" value="good">
+              <label for="good">GOOD</label>
+              <input type="radio" id="avg" name="condition" value="avg">
+              <label for="avg">AVERAGE</label>
+              <input type="radio" id="bad" name="condition" value="bad">
+              <label for="bad">BAD</label>
+            </div>
+            <div class="element">
+                <label for="">Description</label>
+                <textarea name="" id="" cols="20" rows="5" placeholder="Enter details about the condition of book"></textarea>
+            </div>
+            <div class="element">
+              <label for="">Price*</label>
+              <input type="text" placeholder="Price" required>
+          </div>
+            <div class="button1">
+              <label for="inputTag" style="padding: 10px;">
+                Upload Image <br/>
+                <i class="fa fa-2x fa-camera"></i>
+                <input id="inputTag" type="file" style="display: none;"/>
+                <br/>
+                <span id="imageName"></span>
+              </label>
+            </div>
+            <!-- <div class="element">
+                <label for="">Units</label>
+                <input type="number" name="" id="">
+            </div> -->
+            <div class="button1">
+                <button type="submit" onclick="postbook()">Post</button>
+                <button onclick="closePopup()">Cancel</button>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+
+  </div>
+  <script>
+    let input = document.getElementById("inputTag");
+        let imageName = document.getElementById("imageName")
+
+        input.addEventListener("change", ()=>{
+            let inputImage = document.querySelector("input[type=file]").files[0];
+
+            imageName.innerText = inputImage.name;
+        })
+    
+    
+        function initMap() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      let pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      console.log(lat,lng)
+      let map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: pos
+      });
+      let marker = new google.maps.Marker({
+        position: pos,
+        map: map
+      });
+    });
+  }
+}
+  </script> 
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA82okA2oJpgfUCSt8CJcJ40idx2WcJqVQ&callback=initMap%22%3E"></script>
+</body>
+
+</html>
